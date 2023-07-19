@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #0E1014;
+    --light-text: #E4E5EA;
+    --gray: #656566;
+}
+
+body, a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--black);
+    background: url(./imgs/red-light.png) no-repeat, url(./imgs/purple-light.png) top center no-repeat var(--black);
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 109px;
+}
+
+header .purple-ball,
+header .red-ball {
+    position: absolute;
+}
+
+header .purple-ball {
+    top: -5px;
+    left: calc(50vw + 125px);
+}
+
+header .red-ball {
+    top: calc(7.5vh);
+    left: calc(35vw);
+}
+
+header .logo p {
+    margin-top: 10px;
+    max-width: 140px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+header nav {
+    margin-left: -90px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header address {
+    display: flex;
+    gap: 30px;
+}
+
+header address .phone {
+    margin-right: 17px;
+}
