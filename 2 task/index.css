@@ -43,8 +43,8 @@ header .purple-ball {
 }
 
 header .red-ball {
-    top: calc(7.5vh);
-    left: calc(35vw);
+    top: 7.5vh;
+    left: calc(54.5vw - 300px);
 }
 
 header .logo p {
@@ -72,4 +72,191 @@ header address {
 
 header address .phone {
     margin-right: 17px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .left {
+    margin-top: 15px;
+}
+
+main .left h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 362px;
+}
+
+main .left h1 span {
+    background: linear-gradient(to right, #FCB045 0%, #FCB045 40%, #FF3F78);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+main .left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    max-width: 275px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+main .right {
+    max-width: 310px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main .right .title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+main .right .title span {
+    background: linear-gradient(to right, #FCB045 0%, #FD1D1D 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .right .title span:last-of-type {
+    background: linear-gradient(to right, #FCB045 0%, #FD1D1D 200%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .right ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 61px;
+}
+
+main .right ul li {
+    max-width: 140px;
+}
+
+main .right ul .block-header {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+main .right ul .block-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main .right .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    height: 61px;
+    background: #4077F3;
+}
+
+main .right img {
+    position: absolute;
+    left: 53vw;
+    top: 56.6vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .first-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+footer .first-line ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .first-line .about-block {
+    max-width: 200px;
+}
+
+footer .first-line nav {
+    max-width: 470px;
+}
+
+footer .first-line nav li {
+    width: 212px;
+    margin-right: 6px;
+}
+
+footer .first-line nav li a {
+    font-weight: 400;
+}
+
+footer .first-line .column-title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+footer .first-line .contacts-block {
+    text-align: right;
+}
+
+footer .first-line .contacts-block address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .first-line .contacts-block address div {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+footer .second-line {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+    font-size: 12px;
+}
+
+footer .second-line a,
+footer .second-line p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+footer .second-line a {
+    text-decoration: underline;
 }
