@@ -43,7 +43,7 @@ header .purple-ball {
 }
 
 header .red-ball {
-    top: 7.5vh;
+    top: 75px;
     left: calc(54.5vw - 300px);
 }
 
@@ -136,7 +136,7 @@ main .right .title span:last-of-type {
     -webkit-text-fill-color: transparent;
 }
 
-main .right ul {
+main .right ul.desktop {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +144,43 @@ main .right ul {
     margin-bottom: 61px;
 }
 
-main .right ul li {
+main .right ul.mobile {
+    display: none;
+    list-style: none;
+    flex-wrap: wrap;
+    max-width: 340px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 13px;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+main .right ul.mobile li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+main .right ul.mobile li {
+    width: 170px;
+}
+
+main .right ul.mobile li:first-of-type {
+    margin-bottom: 14px;
+}
+
+main .right ul.mobile li:first-of-type,
+main .right ul.mobile li:nth-of-type(3) {
+    margin-right: -20px;
+}
+
+main .right ul.desktop li {
     max-width: 140px;
 }
 
@@ -174,7 +210,7 @@ main .right .button {
 main .right img {
     position: absolute;
     left: 53vw;
-    top: 56.6vh;
+    top: 535px;
 }
 
 footer {
@@ -259,4 +295,391 @@ footer .second-line p {
 
 footer .second-line a {
     text-decoration: underline;
+}
+
+@media (max-width: 1170px) {
+    .wrapper {
+        margin: 0 10px;
+    }
+
+    header .purple-ball {
+        left: calc(50vw + 150px);
+    }
+
+    header .red-ball {
+        left: calc(54.5vw - 230px)
+    }
+
+    header nav {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1005px) {
+    footer .first-line nav {
+        max-width: 320px;
+    }
+
+    footer .first-line nav li {
+        width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    header address .phone {
+        display: none;
+    }
+}
+
+@media (max-width: 890px) {
+    footer .first-line .about-block {
+        width: 145px;
+    }
+
+    footer .first-line ul li {
+        width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 810px) {
+    header address {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 785px) {
+    footer .first-line ul li {
+        width: 120px;
+    }
+
+    footer .first-line nav {
+        width: 275px;
+    }
+}
+
+@media (max-width: 775px) {
+    header nav ul {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 735px) {
+    footer .first-line .contacts-block {
+        width: 200px;
+    }
+}
+
+@media (max-width: 710px) {
+    header address {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .right {
+        max-width: 362px;
+        margin-top: 50px;
+        align-items: center;
+        text-align: left;
+    }
+
+    main .right ul.desktop {
+        justify-content: space-between;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 660px) {
+    header .red-ball {
+        left: calc(50vw)
+    }
+
+    main .right img {
+        left: 70vw;
+    }
+} 
+
+@media (max-width: 645px) {
+    footer .first-line .contacts-block {
+        width: 145px;
+    }
+}
+
+@media (max-width: 615px) {
+    header {
+        justify-content: center;
+    }
+
+    header .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .desktop {
+        display: none;
+    }
+
+    body {
+        background: url(./imgs/red-light.png) 0 -85px no-repeat, 
+                    url(./imgs/purple-light.png) top center no-repeat var(--black)
+    }
+
+    .wrapper,
+    main .left {
+        margin: 0;
+    }
+
+    header {
+        padding: 20px 16px;
+        text-transform: uppercase;
+    }
+
+    header .purple-ball {
+        top: 50%;
+        left: 93%;
+        width: 40px;
+        height: 40px;
+    }
+
+    header .red-ball {
+        top: 66%;
+        left: 5%;
+        width: 43px;
+        height: 43px;
+    }
+
+    main {
+        padding: 40px 0 60px;
+        backdrop-filter: blur(7.5px);
+    }
+
+    main .left p {
+        margin-top: 15px;
+    }
+
+    main .right {
+        margin-top: 45px;
+    }
+
+    main .right img {
+        display: none;
+    }
+
+    main .right ul.desktop {
+        display: none;
+    }
+
+    main .right ul.mobile {
+        display: flex;
+    }
+
+    main .right .button {
+        display: none;
+    }
+
+    footer {
+        margin: 0 15px;
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+
+    footer .first-line {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .first-line .about-block,
+    footer .first-line nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer .first-line .about-block ul li {
+        width: 100%;
+    }
+
+    footer .first-line nav ul li {
+        width: 100%;
+        max-width: 160px;
+        white-space: normal;
+    }
+
+    footer .first-line .contacts-block {
+        text-align: left;
+        width: 100%;
+    }
+
+    footer .first-line .contacts-block address div {
+    justify-content: flex-start;
+    }
+
+    footer .second-line {
+        text-align-last: left;
+    }
+}
+
+
+@media (max-width: 530px) {
+    header {
+        font-size: 12px;
+    }
+
+    header .red-ball {
+        top: 65%;
+    }
+
+    header .purple-ball {
+        left: 92%;
+    }
+}
+
+@media (max-width: 460px) {
+    header .purple-ball {
+        left: 91%;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        background: url("./imgs/noise.png") no-repeat, url("./imgs/red-light-mobile.png") 0 80px no-repeat, url("./imgs/purple-light-mobile.png") 100% 55px no-repeat var(--black);
+    }
+
+    header .purple-ball {
+        top: 35%;
+    }
+
+    header .red-ball {
+        top: 60%;
+    }
+
+    main .left h1 {
+        font-size: 36px;
+        max-width: 300px;
+    }
+
+    main .right .title {
+        max-width: 300px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer .first-line {
+        margin-bottom: 50px;
+    }
+
+    footer .first-line .column-title {
+        font-size: 12px;
+    }
+
+    footer .first-line nav ul li {
+        max-width: 140px;
+    }
+
+    footer .first-line nav ul li:nth-of-type(1) {
+        order: -3;
+        max-width: 120px;
+        margin-right: 25px;
+    }
+
+    footer .first-line nav ul li:nth-of-type(4) {
+        order: -2;
+    }
+
+    footer .first-line nav ul li:nth-of-type(3) {
+        order: -1;
+    }
+
+    footer .first-line nav ul li:nth-of-type(2) {
+        order: 0;
+    }
+
+    footer .first-line .contacts-block a {
+        font-size: 16px;
+    }
+
+    footer .first-line .contacts-block address {
+        gap: 10px;
+    }
+
+    footer .first-line .contacts-block address div img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 415px) {
+    header .purple-ball {
+        left: 90%;
+    }
+
+    header nav ul li:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 395px) {
+    header .purple-ball {
+        left: 88%;
+    }
+}
+
+@media (max-width: 350px) {
+    main .right ul.mobile {
+        gap: 22px;
+        margin-left: 25px;
+    }
+
+    main .right ul.mobile li {
+        width: 145px;
+    }
+
+    main .right ul.mobile li:first-of-type {
+        margin-bottom: -8px;
+    }
+
+    main .right ul.mobile li:last-child {
+        width: 168px;
+    }
+}
+
+@media (max-width: 340px) {
+    main .right ul.mobile {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 335px) {
+    main .right ul.mobile {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    header .purple-ball {
+        left: 87.6%;
+    }
+
+    main .right ul.mobile li:first-of-type, 
+    main .right ul.mobile li:nth-of-type(3) {
+        margin-right: -25px;
+    }
+
+    main .right ul.mobile {
+        margin-left: 10px;
+    }
 }
